@@ -17,10 +17,10 @@ class Cat {
 		return this.age;
 	}
 
-	//toString
+	// toString
 	@Override //errors out if the method we are trying to override is not defined properly (wrong return types, parameters etc.)
 	public String toString() {
-		return name + ", " + age;
+		return this.name + ", " + this.age;
 	}
 
 	//equals
@@ -37,6 +37,7 @@ class Cat {
 
 	@Override
 	public Cat clone() {
+
 		Cat cat = new Cat(this.name, this.age);
 		return cat;
 	}
